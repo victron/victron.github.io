@@ -1,0 +1,43 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #477784;
+  font-weight: 300;
+}
+
+.text-muted {
+  color: #5C5B85;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+.title-super {
+  font-size: 40px;
+}
+
+.my_photo {
+  margin-top: 20px;
+  cursor: pointer;
+}
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+  cursor: pointer;
+}
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+  cursor: pointer;
+}
+
+.row.container-height {
+	overflow: hidden;
+}
+
+.row.container-height > [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
