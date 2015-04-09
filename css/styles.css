@@ -20,7 +20,8 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
-a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+
+.cursor {
   cursor: pointer;
 }
 
@@ -28,16 +29,23 @@ a[href], input[type='submit'], input[type='image'], label[for], select, button, 
   cursor: pointer;
 }
 
-.row.container-height {
-	overflow: hidden;
+
+.column-item {
+  display: flex;        /* Lay out each item using flex layout */
+  flex-flow: column;   /* Lay out item’s contents vertically  */
+}
+.column-item > img {
+   margin-top: auto; /* Center the image cross-wise (horizontally)         */
 }
 
-.row.container-height > [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+.column-item > div {
+  margin-top: auto;     /* Auto top margin pushes button to bottom */
 }
 
-.vertical-align {
-    display: flex;
-    align-items: center;
+.display-flex {
+  display: flex;        /* Flex layout so items have equal height  */
+}
+
+.hidden {
+  display: none;
 }
